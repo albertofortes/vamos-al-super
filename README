@@ -1,0 +1,39 @@
+Vamos al Super
+==============
+es un Todo List un poco más sofisticado y especializado en las listas de compras del hogar. Está totalmente pensado para que tu y tu familia creeis fácilmente las listas de la compra desde cualqueir dispositivo y de manera inmediata. Crea un usuario administrador (que puede gestionar a otros usuarios) y luego crea otros usuarios miembros que pueden hacer todo lo demás.
+
+Imagina que tienes que ir al Mercadona y entre tu y tu mujer ya habeis creado una lista de la compra. Pero a última hora ella recuerda que tenía que comprar champú. No hace falta llamadas de teléfono o Whats Up, ella entra en Vamos al Super desde su teléfono móvil y agrega a la lista ‘Mercadona’ un nuevo producto: champú marca Acme. Mientras tú estas comprando en el Súper y marcando como comprados cada item, te aparece ya automáticamente el nuevo pedido de champú. Así es imposible olvidar nada.
+
+Vamos al super funciona con listas de la compra a la que le puedes asignar un nombre, descripción, imagen y estado (pendiente o ya realizada). Cuando seleccionas una lista, puedes añadir, marcar como comprados o eliminar productos que pertenecen en exclusiva a esta lista de la compra. De esta manera puedes tener distintas listas con diferentes productos para cada cosa: Mercadona, Frutería, Ferretería… Una nueva forma de llevar fácilmente las listas encima y accesibles desde tu teléfono móvil, iPad u ordenador.
+
+Requisitos y tecnologías usadas
+-------------------------------
+Vamos al super está hecho con CodeIgniter 2, Ion Auth, Bootstrap from Twitter, jQuery, Backbonejs.
+Para hacerlo andar en tu servidor necesitas PHP5 y una base de datos mysql. 
+
+Instalación
+-----------
+1º. Crea una base de datos en tu servidor con el nombre que desees.
+2º. Edita el archivo /application/database.php e ingresa los valores de tu base de datos (nombre de la bbbdd, usuario y contraseña):
+	$db['default']['username'] = 'nombre-de-usuario';
+	$db['default']['password'] = 'contraseña-usuario';
+	$db['default']['database'] = 'nombre-de-la-base-de-datos';
+3º. El *proceso instalador* hará el resto: ingresa en tu navegador en http://tu-dominio.com/install Y completa el formulario, te solicitará nuevamente los datos anteriores (nombre de la bbbdd, usuario y contraseña).
+
+Y listo. Por seguridad elimina el directorio /install. 
+El usuario/contraseña por defecto son: 
+	usuario:admin@admin.com
+	contraseña: password
+Aconsejo que una vez logado edites tus datos y cambies tu contraseña.
+
+Créditos
+--------
+Alberto Fortes: www.albertofortes.com | www.piscolabis.es
+Versión beta: julio de 2012
+
+Contribuir
+----------
+1. Fork it alegremente
+2. Crea un branch 
+3. Commit tus cambios
+4. Push el branch
