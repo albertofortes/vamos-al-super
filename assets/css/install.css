@@ -1,0 +1,10 @@
+/* header --- */
+body {background-color:#e8e8e8;}
+header.header {min-height: 65px;}
+.navbar-inner {color:#fff; background: #0088CC; background: -webkit-linear-gradient(center top , #0088CC, #0055CC); background: -moz-linear-gradient(center top , #0088CC, #0055CC); background: linear-gradient(center top , #0088CC, #0055CC);}
+.navbar .brand {color:#fff; font-size: 31px; font-weight: bold;}
+
+/* content --- */
+.content .wrapper {border: 1px solid #ccc; background-color:#fff; border-radius: 7px; padding: 10px; margin: 0 auto; position: relative;}
+.content .wrapper .page-header {margin-top: 0; position: relative}
+.content .wrapper .page-header .btn-top-right {position: absolute; top: 0; right: 0;}
