@@ -19,6 +19,7 @@ Instalación
 	$db['default']['password'] = 'contraseña-usuario';
 	$db['default']['database'] = 'nombre-de-la-base-de-datos';
 3º. El *proceso instalador* hará el resto: ingresa en tu navegador en http://tu-dominio.com/install Y completa el formulario, te solicitará nuevamente los datos anteriores (nombre de la bbbdd, usuario y contraseña).
+4º. Para subir archivos, crea en la raíz de tu aplicación un directorio /uploads (mismo nivel que l acarpeta /application o /assets) y dale permisos de lectura y escritura.
 
 Y listo. Por seguridad elimina el directorio /install. 
 El usuario/contraseña por defecto son: 
