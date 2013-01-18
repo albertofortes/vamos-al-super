@@ -505,5 +505,7 @@ class Auth extends CI_Controller {
 			return FALSE;
 		}
 	}
+	
+	// añadidos:
 
 }

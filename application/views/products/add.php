@@ -19,7 +19,7 @@
     </p>
     <p>
     	<label>Cantidad</label>
-    	<input type="text" name="quantity" value="<?php $quantity = set_value('quantity'); echo $quantity; ?>"  class="span1" />
+    	<input type="text" name="quantity" value="<?php $quantity = set_value('quantity'); if($quantity) : echo $quantity; else : echo "1"; endif; ?>"  class="span1" />
     </p>
     <p>
     	<label>Descripción</label>
