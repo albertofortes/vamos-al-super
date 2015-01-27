@@ -20,8 +20,10 @@
     	<h3>
     		<?php if($product->status == 1) : ?> <del><?php endif; ?>
     		<?= $product->quantity ?> x <?= $product->name ?>
+
     		<?php if($product->status == 1) : ?> </del><?php endif; ?>
     	</h3>
+        <?php if($product->url): ?><p><a href="<?= $product->url ?>" target="blank">[link]</a></p><?php endif; ?>
         <?php if($product->description): ?><p><?= $product->description ?></p><?php endif ?>
         <div class="actions">
         	<p>

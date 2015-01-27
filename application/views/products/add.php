@@ -11,7 +11,7 @@
 		<p><?= validation_errors() ?></p>
 	</div>
 <?php endif; ?>
- 
+
 <form method="post" action="<?php echo site_url('products/add')?>" class="well" enctype="multipart/form-data">
     <p>
     	<label>Título</label>
@@ -24,6 +24,10 @@
     <p>
     	<label>Descripción</label>
     	<textarea name="description" rows="3" cols="" class="input-xlarge"><?php echo set_value('description'); ?></textarea>
+    </p>
+    <p>
+        <label>URL</label>
+       <input type="text" name="url" value="<?php echo set_value('url'); ?>" class="input-xlarge" />
     </p>
     <div class="form-actions">
     	<input type="hidden" name="idList" value="<?= $idList?>" />

@@ -49,11 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-//$db['default']['hostname'] = '$db['default']['hostname'] = 'slgh675.piensasolutions.com';';
 $db['default']['username'] = 'vamosalsuper';
-//$db['default']['username'] = 'qqw102';
-//$db['default']['password'] = 'mapashito6';
-$db['default']['password'] = 'P1sc0l4b1s';
+$db['default']['password'] = 'whatever';
 $db['default']['database'] = 'vamos_al_super';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

@@ -98,7 +98,6 @@ class Lists_model extends CI_Model {
 		$config['max_width']  = '1024';
 		$config['max_height']  = '768';	
 		$this->load->library('upload', $config);
-		$this->load->library('image_lib');
         
         if ( ! $this->upload->do_upload())
 		{
@@ -107,17 +106,15 @@ class Lists_model extends CI_Model {
 		else
 		{
 			$upload_ok = array('upload_data' => $this->upload->data());
-			$c = array(
-				'image_library' => 'gd2',
-				//'library_path' => './uploads/thumbs/',
-				'source_image' => './uploads/thumbs/mypic.jpg',
+			$config = array(
+				'source_image' => './uploads/',
+				'new_image' => './uploads/thumbs',
 				'maintain_ration' => true,
-				'create_thumb' => true,
-				'width' => 50,
-				'height' => 50
+				'width' => 65,
+				'height' => 65
 			);				
-			$this->load->library('image_lib', $c);
-			$this->image_lib->resize();			
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();				
 			//print_r($upload_ok);
 			return base_url()."/uploads/".$upload_ok['upload_data']['file_name'];
 		}

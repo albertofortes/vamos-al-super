@@ -14,7 +14,7 @@
 	</div>
 <?php endif; ?>
 
- 
+
 <form method="post" action="<?php echo site_url('products/edit')?>" class="well">
     <p>
     	<label>Nombre</label>
@@ -27,6 +27,11 @@
     <p>
     	<label>Descripción</label>
     	<textarea name="description" rows="3" cols="" class="input-xlarge"><?= $row->description;?></textarea>
+    </p>
+     <p>
+        <label>URL</label>
+        <input type="text" name="url" value="<?= $row->url;?>" class="input-xlarge" />
+        <?php if($row->url): ?><a href="<?= $row->url ?>" target="blank">[link]</a><?php endif; ?>
     </p>
     <p><label>¿Marcar como comprado?</label></p>
     <div class='toggle basic' data-enabled="Comprado" data-disabled="Pendiente" data-toggle="toggle">

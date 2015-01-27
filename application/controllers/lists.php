@@ -103,7 +103,7 @@ class Lists extends CI_Controller {
 	        {
 	            
 	        	$upload_path = $this->lists_model->do_upload(); 
- 
+	            
 		        $data = array_filter(array(
 		        		'id' => (int) $this->input->post('id'),
 		                'name'=> $this->input->post('title'),
@@ -113,7 +113,6 @@ class Lists extends CI_Controller {
 		        $data['status'] = $this->input->post('status');
 		        $this->lists_model->edit($this->input->post('id'), $data);
 		        $this->session->set_flashdata('message', 'Has modificado la lista correctamente.');            
-		        //print_r($upload_path);
 		        redirect('/lists');
 	        } else {
 	        	$id = (int) $this->input->post('id');
